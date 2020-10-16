@@ -1,0 +1,36 @@
+@keyframes showNav {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+.nav {
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  position: fixed;
+  padding: 20px 50px;
+  border-top: 1px solid #f7f7f7;
+}
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list .nav__list-item {
+}
+.nav__list-item i {
+  font-size: 20px;
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNav 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.nav .nav__list-link {
+  position: relative;
+}
