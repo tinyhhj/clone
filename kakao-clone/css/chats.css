@@ -1,0 +1,98 @@
+@import "./reset.css";
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+}
+body {
+  color: #020202;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 20px;
+}
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.menu i {
+  margin-left: 10px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.chats {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat .chat__column {
+  display: flex;
+  align-items: center;
+}
+.chat .chat__name {
+  display: block;
+  margin-bottom: 5px;
+}
+.chat .chat__detail {
+  opacity: 0.6;
+}
+.chat img {
+  width: 60px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.chat .chat__date {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+@keyframes showNav {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+.nav .nav__list {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  animation: showNav 0.5s forwards;
+  animation-delay: 0.5s;
+  transform: translateY(80px);
+}
+.nav__list i {
+  font-size: 1.3rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
